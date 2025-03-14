@@ -1,0 +1,24 @@
+{
+  "name": "sakura",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/thaoshine/sakura#readme",
+  "bugs": {
+    "url": "https://github.com/thaoshine/sakura/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaoshine/sakura.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "teck.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
+  }
+}

@@ -1,11 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <script src="teck.js"></script>
+    <style>
+        .my {
+            background: linear-gradient(169deg, #00FFEA -4.02%, #0080FF 97.01%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .menu {
+            background: linear-gradient(90deg, rgba(12, 9, 28, 0.01) 0%, rgba(12, 9, 28, 0.01) 100%);
+            backdrop-filter: blur(6px);
+        }
+
+        #text {
+            background: linear-gradient(180deg, rgba(49, 38, 125, 0.00) 0%, #0C091C 90.38%);
+        }
+
+        #field {
+            background: linear-gradient(180deg, #070124 0%, rgba(7, 1, 36, 0.50) 50%, #070124 100%), url(<path-to-image>) lightgray 0px -170.34px / 100% 136.612% no-repeat;
+        }
+        .icon{
+            border-radius: 20px;
+background: rgba(255, 255, 255, 0.36);
+box-shadow: 8.051px 24.152px 89.45px -11.629px rgba(22, 52, 80, 0.10);
+backdrop-filter: blur(4px);
+        }
+        .image{
+            border-radius: 4px;
+background: linear-gradient(180deg, rgba(9, 7, 23, 0.00) 0%, #090717 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+        }
+        .content{
+            border-radius: 8px;
+border: 1px solid #01DDEF;
+background: rgba(12, 9, 28, 0.90);
+backdrop-filter: blur(6px);
+        }
+        .footer{
+            
+            background: url("BG41.png") lightgray 0px -316px / 100% 176.699% no-repeat;
+        }
+    </style>
 </head>
-<body>
+
+<body class="w-full h-[5000px] flex flex-col bg-[#0C091C]">
+    <div class="w-full flex flex-col  bg-[url('BG2.png')] bg-no-repeat bg-cover bg-center relative top-0 ">
+        <div class="menu w-full flex justify-between   my-6 px-[112px] sticky top-0 left-0 z-10 ">
+            <div class="logo flex pt-[0.03px] pb-[0.036px] pr-[11.30px] ">
+                <img src="Layer_1.svg" alt="">
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="flex font-as text-white leading-normal text-base font-light ">
+                    <div class="p-3">About us</div>
+                    <div class="p-3">Blog</div>
+                    <div class="p-3">Contact</div>
+
+                </div>
+                <div class="flex gap-2 py-2 pl-4 pr-2 rounded-sm border border-white border-solid">
+                    <button class=" text-4 font-as leading-normal font-medium text-white 
+                    ">Get in touch</button>
+
+                    <div class="flex p-2 jusify-center items-center rounded-xs bg-white">
+                        <img src="Arrow.svg" alt="" class="size-6 ">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="pt-[495px] pb-[87px] gap-4 px-[112px] font-as text-white text-[40px] leading-normal font-semibold "
+            id="text">
+            <p>We design and develop digital solutions that solve real
+                <br> problems—fast and effectively.
+            </p>
+            <div class="my font-as text-[64px] font-semibold leading-normal ">
+                Innovate.
+            </div>
+        </div>
+
+    </div>
+    <div class=" ">
+        <video loop muted src="8c3b06a15f10acc1e25c143073555951c0809148.mp4"></video>
+    </div>
+    <div class="w-full flex justify-center items-center  bg-[#070124]">
+
+        <div class="w-full flex flex-col gap-10 px-[112px] my-[80px]">
+            <div class="flex justify-start gap-[48px]">
+                <div class="flex flex-col  flex-1 gap-[8px]">
+                    <img src="AI Generate A lined.svg" alt="" class="w-[32px] h-[32px]"
+                        style="color: rgba(1, 221, 239, 1)" />
+                    <p class="text-[36px] font-as  font-semibold text-white leading-normal">
+                        Consultancy
+                    </p>
+                    <div class="text-[20px] font-as text-white opacity-80 font-light leading-normal">
+                        <p>
+                            Unlock the full potential of your business. Designed to
+                            navigate the complexities of today's market, we provide the
+                            insight and direction needed to achieve long-term growth and
+                            success.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-[8px]">
+                    <img src="AI Generate A lined.svg" alt="" class="w-[32px] h-[32px]"
+                        style="color: rgba(1, 221, 239, 1)" />
+                    <p class="text-[36px] font-as font-semibold text-white leading-normal">
+                        UI/UX Design
+                    </p>
+                    <div class="flex items-center gap-[12px] text-[16px] text-white leading-normal font-as font-light">
+                        <p>Research</p>
+                        <img src="Ellipse 1.svg" alt="" class="w-[4px] h-[4px] bg-white" />
+                        <p>Web Platform</p>
+                        <img src="Ellipse 1.svg" alt="" class="w-[4px] h-[4px] bg-white" />
+                        <p>Mobile App</p>
+                    </div>
+                    <div class="text-[20px] l text-white opacity-80 font-light leading-normal">
+                        <p>
+                            By working hand in hand, we'll turn your ideas into real, market-ready products. With a
+                            focus on your unique needs, we'll blend aesthetics and usability. We create visually
+                            compelling and user-friendly websites that reflect your brand's identity and engage your
+                            target audience. Our designs are tailored to provide seamless navigation and a memorable
+                            user experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-start gap-[48px]">
+                <div class="flex flex-col flex-1 gap-[8px]">
+                    <img src="AI Generate A lined.svg" alt="" class="w-[32px] h-[32px]"
+                        style="color: rgba(1, 221, 239, 1)" />
+                    <p class="text-[36px] font-as font-semibold text-white leading-normal">
+                        Development
+                    </p>
+                    <div class="flex items-center gap-[12px] text-[16px] text-white leading-normal font-as font-light">
+                        <p>NodeJS</p>
+                        <img src="Ellipse 1.svg" alt="" class="w-[4px] h-[4px] bg-white" />
+                        <p>PHP</p>
+                        <img src="Ellipse 1.svg" alt="" class="w-[4px] h-[4px] bg-white" />
+                        <p>React</p>
+                    </div>
+                    <div class="text-[20px] l text-white opacity-80 font-light leading-normal">
+                        <p>
+                            Our development team brings your digital projects to life with robust, scalable, and
+                            high-performing solutions. Using the latest technologies, we ensure that your applications
+                            are built to meet your business goals and provide a seamless experience for users.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 gap-[8px]">
+                    <img src="AI Generate A lined.svg" alt="" class="w-[32px] h-[32px]"
+                        style="color: rgba(1, 221, 239, 1)" />
+                    <p class="text-[36px] font-as font-semibold text-white leading-normal">
+                        SEO
+                    </p>
+
+                    <div class="text-[20px] l text-white opacity-80 font-light leading-normal">
+                        <p>
+                            There's always competition for your product or service. We follow the strict, ever-changing
+                            procedures and protocols to give you the best chance of reaching page one of Google,
+                            generating relevant and high intent traffic, that's ready to start a conversation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="w-full flex flex-col  text-white justify-center bg-[url('background.png')] bg-no-repeat bg-cover bg-center relative top-0">
+       <div class="mt-[80px] gap-[52px]">
+        <div class="flex mx-[112px]  pb-6   justify-between items-start border-b border-white/35 ">
+       
+            <p class="flex font-as text-[36px] font-medium leading-normal items-start">Fields</p>
+            <p class="flex text-base font-light text-right font-as leading-normal items-start">We deliver comprehensive software solutions tailored to each industry, optimizing workflows and
+                <br> driving business efficiency.</p>
+
+        </div>
+        <div class="flex mx-[112px] mt-[52px] mb-[80px]  flex-col gap-[80px]">
+            <div class="w-full grid grid-cols-4 gap-[36px]">
+                <div class="w-full flex  gap-[36px] items-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center">
+                                <img src="Wallet.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal whitespace-nowrap ">
+                            Finance - Accounting
+                        </div>
+        
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="flex   items-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center" >
+                                <img src="Cart.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal ">
+                            E-commerce
+                        </div>
+        
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="flex   items-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center" >
+                                <img src="Security.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal ">
+                            Insurance
+                        </div>
+        
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="flex   items-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center" >
+                                <img src="Home.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal ">
+                            Real Estate
+                        </div>
+        
+                    </div>
+                    
+                    
+                    
+                </div>
+
+            </div>
+            <div class="w-full grid grid-cols-3 gap-[36px]">
+                <div class="w-full flex  items-center justify-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center">
+                                <img src="Locations.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal ">
+                            Travel
+                        </div>
+        
+                    </div>
+                    
+
+                </div>
+                <div class="w-full flex  items-center justify-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center">
+                                <img src="Profile.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal whitespace-nowrap ">
+                            Human Resource Management
+                        </div>
+        
+                    </div>
+                    
+
+                </div>
+                <div class="w-full flex  items-center justify-center">
+                    <div class="w-[277px] h-[160px] gap-6 flex flex-col items-center ">
+                        <div class="flex h-[100px]  aspect-square items-center justify-center flex-shrink-0">
+                            <div class="flex icon w-[99px] h-[99px] rotate-[0.119deg] flex-shrink-0 items-center justify-center">
+                                <img src="Profile.svg" alt="" class="w-[79px] h-[79px]">
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="font-as text-center text-2xl font-semibold leading-normal whitespace-nowrap ">
+                            Document Process Workflow
+                        </div>
+        
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+       
+
+        
+       </div>
+       
+       
+
+       
+       
+
+    </div>
+    <div class="w-full flex ">
+        <div class="cricle h-[721px] w-[721px] blur-[180px] absolute z-10 bg-[#160E41] bottom-0 right-[274px] rounded-[721px] ">
+
+        </div>
+        <div class="mx-[112px] my-[80px] flex flex-col gap-[52px]  ">
+            <div class="w-full border-b border-white/30 ">
+                <div class="w-full flex pb-[24px] items-start text-[36px] font-as font-medium leading-normal text-white ">
+                    <p>
+                        Why <br>Techzone Digital
+                    </p>
     
+                </div>
+
+            </div>
+            <div class="flex w-full  justify-between items-center self-stretch">
+                <div class="w-full h-[722px] grid grid-cols-3 gap-6">
+                    <div class="flex items-end justify-center">
+                        <div class="flex w-[315px] h-[420px] p-4 justify-center items-center bg-[#070124] rounded-sm border border-[#01DDEF] border-solid">
+                            <img src="Image_1.png" alt="" class="image">
+
+                        </div>
+                        
+                    </div>
+                    <div class="flex items-center justify-center relative z-20" > 
+                        <div class="flex w-[315px] h-[420px] p-4 justify-center items-center bg-[#070124] rounded-sm border border-[#01DDEF] border-solid">
+                            <img src="Image_2.png" alt="" class="image">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="flex items-start justify-center">
+                        <div class="flex w-[315px] h-[420px] p-4 justify-center items-center bg-[#070124]  rounded-sm border border-[#01DDEF] border-solid">
+                            <img src="Image_4.png" alt="" class="image">
+
+                        </div>
+
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div
+    class="w-full px-[112px] py-[60px] flex bg-black justify-center items-center self-stretch"
+  >
+    <div
+      class=" rounded-[8px] overflow-hidden relative "
+    >
+      <video
+        class="w-full h-full object-cover"
+        src="7b39ef0aad22c7b19242a5fb5a480ed247c98266.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div
+        class="content absolute inset-0 w-full flex flex-col justify-center items-center gap-[24px] shrink-0"
+      >
+        <div
+          class=" flex flex-col items-center text-center pt-[59px] px-[302px] gap-[24px]"
+        >
+          <p
+            class="text-[36px] font-as text-white  leading-normal font-semibold"
+          >
+            Your Idea. Our Passion.
+          </p>
+          <p
+            class="text-[16px] font-as  font-light leading-normal text-center text-white/80"
+          >
+            We turn challenges into high-impact websites & apps—efficient
+            and creative. Let's create something amazing together!
+          </p>
+        </div>
+        <div class="flex items-center justify-center pb-[59px]">
+          <button
+            class="flex items-center gap-[8px] py-[8px] pl-[16px] pr-[8px] font-normal rounded-[4px] text-[#FFFFFF] border border-solid border-white"
+          >
+            <span class="font-medium font-as text-[16px]">Get in touch</span>
+            <div
+              class="p-[8px] w-[40px] h-[40px] bg-[#FFFFFFFF] rounded-[2px] flex justify-center items-center"
+            >
+              <img src="Arrow.svg" alt="" class="w-[24px] h-[24px]" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-full px-[121px] py-[80px] flex rounded-[60px] bg-white items-center justify-center">
+    <div class="w-full flex  justify-center ">
+        <div class="grid sm:grid-cols-2 gap-[52px]">
+            <div class="flex flex-col items-start">
+                <div
+                  class="w-full gap-[24px]  flex flex-col items-start border-b mb-[24px] border-b-[rgba(23,13,72,0.3) pb-[24px] ]"
+                >
+                  <div
+                    class="text-[36px] font-as leading-normal font-medium text-[#170D48]"
+                  >
+                    <p>
+                      We Have 24/7<br />
+                      Support Available
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[24px]">
+                    <div
+                      class="p-[8px] rounded-[4px] flex items-center justify-center border border-[rgba(23,13,72,0.4)]"
+                    >
+                      <img src="Social icon.svg" alt="" class="w-[24px] h-[24px]" />
+                    </div>
+                    <div
+                      class="p-[8px] rounded-[4px] flex items-center justify-center border border-[rgba(23,13,72,0.4)]"
+                    >
+                      <img
+                        src="Social icon4.svg"
+                        alt=""
+                        class="w-[24px] h-[24px]"
+                      />
+                    </div>
+                    <div
+                      class="p-[8px] rounded-[4px] flex items-center justify-center border border-[rgba(23,13,72,0.4)]"
+                    >
+                      <img src="Group.svg" alt="" class="w-[24px] h-[24px]" />
+                    </div>
+                    <div
+                      class="p-[8px] rounded-[4px] flex items-center justify-center border border-[rgba(23,13,72,0.4)]"
+                    >
+                      <img
+                        src="Social icon (1).svg"
+                        alt=""
+                        class="w-[24px] h-[24px]"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-full gap-[24px] pt-[24px] flex flex-col items-start self-stretch"
+                >
+                  <div
+                    class="w-[287px] h-[85px] flex flex-col items-start gap-[4px]"
+                  >
+                    <div
+                      class="px-[12px] py-[8px] justify-center items-center rounded-[2px] bg-[rgba(12,9,28,0.5)]"
+                    >
+                      <p
+                        class="text-white text-[20px] font-medium leading-[130%] tracking-[-0.6px]"
+                      >
+                        Sale
+                      </p>
+                    </div>
+                    <div
+                      class="w-[287px] h-[31px] py-[4px] flex justify-start items-center self-stretch"
+                    >
+                      <p
+                        class="text-black text-[24px] font-as font-medium leading-[130%] tracking-[-0.72px]"
+                      >
+                        sale.techzone@digital.vn
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full flex flex-col items-start gap-[4px]"
+                  >
+                    <div
+                      class="px-[12px] py-[8px] justify-center items-center rounded-[2px] bg-[rgba(12,9,28,0.5)]"
+                    >
+                      <p
+                        class="text-white text-[20px] font-as font-medium leading-[130%] tracking-[-0.6px]"
+                      >
+                        Hotline
+                      </p>
+                    </div>
+                    <div
+                      class="w-full py-[4px] flex justify-start items-center self-stretch"
+                    >
+                      <p
+                        class="text-black font-as text-[24px] font-medium leading-[130%] tracking-[-0.72px]"
+                      >
+                        0900-000-600
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full flex flex-col items-start gap-[4px]"
+                  >
+                    <div
+                      class="px-[12px] py-[8px] justify-center items-center rounded-[2px] bg-[rgba(12,9,28,0.5)]"
+                    >
+                      <p
+                        class="text-white font-as text-[20px] font-medium leading-[130%] tracking-[-0.6px]"
+                      >
+                        Founder
+                      </p>
+                    </div>
+                    <div
+                      class="w-full py-[4px] flex justify-start items-center self-stretch"
+                    >
+                      <p
+                        class="text-black text-[24px] font-as font-medium leading-[130%] tracking-[-0.72px]"
+                      >
+                        hq.techzone@digital.vn
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="flex flex-col items-start">
+                <div
+            class="w-full flex flex-col items-start flex-1 gap-[24px]"
+          >
+            <div
+              class="w-full p-[24px] flex items-start gap-[32px] self-stretch rounded-[4px] bg-[#170D48]"
+            >
+              <div
+                class="w-[478px] flex flex-col items-start gap-[16px] flex-1"
+              >
+                <p class="text-white text-20px font-light leading-normal font-as">
+                  What services does Techzone Digital offer?
+                </p>
+                <div class="text-white text-[16px] font-as font-medium leading-normal">
+                  <ul class="list-disc pl-[20px]">
+                    We specialize in:
+                    <li>
+                      Technology consulting & digital transformation strategies.
+                    </li>
+                    <li>
+                      Website design & development for businesses of all sizes.
+                    </li>
+                    <li>Mobile app development (iOS & Android).</li>
+                    <li>
+                      System integration, performance optimization, and security
+                      solutions.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="w-[24px] h-[24px]">
+                <img src="collapse.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full p-[24px] gap-[32px] flex items-start self-stretch rounded-[4px]"
+              style="background-color: rgba(23, 13, 72, 0.88)"
+            >
+              <div
+                class="text-white font-as text-[20px]? font-light leading-normal flex-1"
+              >
+                <p>How long does it take to complete a project?</p>
+              </div>
+              <div class="w-[24px] h-[24px]">
+                <img src="collapse.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full p-[24px] gap-[32px] flex items-start self-stretch rounded-[4px]"
+              style="background-color: rgba(23, 13, 72, 0.88)"
+            >
+              <div
+                class="text-white font-as text-[20px]? font-light leading-normal flex-1"
+              >
+                <p>How much does it cost to develop a website or app?</p>
+              </div>
+              <div class="w-[24px] h-[24px]">
+                <img src="collapse.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full p-[24px] gap-[32px] flex items-start self-stretch rounded-[4px]"
+              style="background-color: rgba(23, 13, 72, 0.88)"
+            >
+              <div
+                class="text-white font-as text-[20px]? font-light leading-normal flex-1"
+              >
+                <p>Do we provide maintenance and upgrades after delivery?</p>
+              </div>
+              <div class="w-[24px] h-[24px]">
+                <img src="collapse.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-full p-[24px] gap-[32px] flex items-start self-stretch rounded-[4px]"
+              style="background-color: rgba(23, 13, 72, 0.88)"
+            >
+              <div
+                class="text-white font-as text-[20px]? font-light leading-normal flex-1"
+              >
+                <p>Our development process?</p>
+              </div>
+              <div class="w-[24px] h-[24px]">
+                <img src="collapse.svg" alt="" />
+              </div>
+            </div>
+          </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="footer w-full  self-stretch flex-shink-0 px-[112px] py-[85px] ">
+    
+        <div class="w-full  flex flex-col justify-center items-center rounded-b-lg bg-[rgba(8,6,24,0.82)] backdrop-blur-[6px] ">
+            
+            <div class="w-full flex px-[40px] py-[32px]  justify-between items-center">
+                <div class="w-full flex justify-start items-center">
+                    <div
+                    class="w-full flex  justify-start items-center gap-[10px]"
+                  >
+                    <img
+                      src="Vector (1).svg"
+                      alt=""
+                      class="w-[22.518px] h-[47.929px] fill-white flex-shrink-0"
+                    />
+                    <div>
+                      <img
+                        src="Group (2).svg"
+                        alt=""
+                        class="w-[232.584px] h-[31.885px] flex-shrink-0"
+                      />
+                      <img
+                        src="Group (3).svg"
+                        alt=""
+                        class="w-[166.882px] h-[7.375px] flex-shrink-0"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full flex justify-between  items-start ">
+                    <div class="w-full h-full flex flex-col items-start gap-[8px]">
+                        <div
+                          class="flex px-[8px] py-[4px]  items-start gap-[10px] rounded-[2px] bg-[#1A1A2A]"
+                        >
+                          <p
+                            class="text-base  font-as font-medium text-[#F1F1F1] leading-[130%] tracking-[-0.48px]"
+                          >
+                          Sale
+                          </p>
+                        </div>
+                        <div
+                          class="py-[4px] mx-0 justify-center items-center self-stretch"
+                        >
+                          <p
+                            class="text-base font-as font-medium leading-[130%] tracking-[-0.48px] text-white"
+                          >
+                          sale.techzone@digital.vn
+                          </p>
+                        </div>
+                      </div>
+                      <div class="w-full h-full flex ml-auto mr-auto flex-col items-start gap-[8px]">
+                        <div
+                          class="flex px-[8px] py-[4px] justify-center items-start gap-[10px] rounded-[2px] bg-[#1A1A2A]"
+                        >
+                          <p
+                            class="text-base font-as font-medium text-[#F1F1F1] leading-[130%] tracking-[-0.48px]"
+                          >
+                          Hotline
+                          </p>
+                        </div>
+                        <div
+                          class="py-[4px] mx-0 justify-center items-center self-stretch"
+                        >
+                          <p
+                            class="text-base font-as font-medium leading-[130%] tracking-[-0.48px] text-white"
+                          >
+                          0900-000-600
+                          </p>
+                        </div>
+                      </div>
+                      <div class=" flex flex-col items-start gap-[8px]">
+                        <div
+                          class="flex px-[8px] py-[4px] justify-center items-start gap-[10px] rounded-[2px] bg-[#1A1A2A]"
+                        >
+                          <p
+                            class="text-base font-as font-medium text-[#F1F1F1] leading-[130%] tracking-[-0.48px]"
+                          >
+                          Founder
+                          </p>
+                        </div>
+                        <div
+                          class="py-[4px] mx-0 justify-center items-center self-stretch"
+                        >
+                          <p
+                            class="text-base font-as font-medium leading-[130%] tracking-[-0.48px] text-white"
+                          >
+                          hq.techzone@digital.vn
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              
+              
+            </div>
+
+            <div class="w-full flex py-[32px] px-[29px] ">
+                <div class="w-full flex  justify-between items-center ">
+                    <div class="w-full flex items-center gap-[16px]">
+                        <div
+                          class="p-[12px] flex items-center text-white text-16px font-normal leading-normal"
+                        >
+                          <button>About us</button>
+                        </div>
+                        <div
+                          class="p-[12px] flex items-center text-white text-16px font-normal leading-normal"
+                        >
+                          <button>Blog</button>
+                        </div>
+                        <div
+                          class="p-[12px] flex items-center text-white text-16px font-normal leading-normal"
+                        >
+                          <button>Contact</button>
+                        </div>
+                      </div>
+    
+                      <div class="w-full flex justify-between  items-start">
+                        <div class=" font-as text-base text-white leading-[130%] font-normal tracking-[-0.48px]">
+                            <p>This website is a general communication for
+                              <br> informational purposes only</p> 
+                           
+                          </div>
+                          <div class="ml-auto text-base font-as text-white leading-[130% font-normal tracking-[-0.48px]">
+                            <p>Design by
+                              <br> Techzone Digital</p> 
+                           
+                          </div>
+    
+                          
+                      </div>
+                      
+                     
+                </div>
+            </div>
+           
+            
+        </div>
+
+
+    
+       
+    
+      </div>
+     
+    
+  
 </body>
+
 </html>
